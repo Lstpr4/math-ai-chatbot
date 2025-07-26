@@ -33,6 +33,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Prepare for deployment
+        run: |
+          # Create a copy of frontend JS files with mock backend
+          echo "Setting up static version of the site..."
+          # Make sure the frontend's JS files reference the static scripts
+          cp frontend/scripts/gh-pages.js frontend/scripts/gh-pages.min.js
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

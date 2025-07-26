@@ -1,0 +1,137 @@
+{
+  "formulas": {
+    "algebra": {
+      "quadratic_formula": "x = (-b ± √(b² - 4ac)) / 2a",
+      "slope_formula": "m = (y₂ - y₁) / (x₂ - x₁)",
+      "distance_formula": "d = √[(x₂ - x₁)² + (y₂ - y₁)²]",
+      "linear_equation": "y = mx + b",
+      "binomial_expansion": "(x + y)ⁿ = Σ (n choose k) xⁿ⁻ᵏyᵏ",
+      "exponent_rules": {
+        "product": "xᵃ · xᵇ = xᵃ⁺ᵇ",
+        "quotient": "xᵃ / xᵇ = xᵃ⁻ᵇ",
+        "power": "(xᵃ)ᵇ = xᵃᵇ"
+      },
+      "logarithm_rules": {
+        "product": "log(xy) = log(x) + log(y)",
+        "quotient": "log(x/y) = log(x) - log(y)",
+        "power": "log(xⁿ) = n·log(x)"
+      },
+      "factoring": {
+        "difference_of_squares": "a² - b² = (a+b)(a-b)",
+        "perfect_square_trinomial": "a² + 2ab + b² = (a+b)²"
+      }
+    },
+    "geometry": {
+      "circle": {
+        "area": "A = πr²",
+        "circumference": "C = 2πr",
+        "diameter": "d = 2r"
+      },
+      "triangle": {
+        "area": "A = (1/2) · b · h",
+        "perimeter": "P = a + b + c",
+        "pythagorean_theorem": "a² + b² = c²"
+      },
+      "rectangle": {
+        "area": "A = l · w",
+        "perimeter": "P = 2(l + w)",
+        "diagonal": "d = √(l² + w²)"
+      },
+      "square": {
+        "area": "A = s²",
+        "perimeter": "P = 4s",
+        "diagonal": "d = s√2"
+      },
+      "sphere": {
+        "volume": "V = (4/3)πr³",
+        "surface_area": "A = 4πr²"
+      },
+      "cylinder": {
+        "volume": "V = πr²h",
+        "lateral_surface_area": "A = 2πrh",
+        "total_surface_area": "A = 2πr(r+h)"
+      },
+      "cone": {
+        "volume": "V = (1/3)πr²h",
+        "slant_height": "l = √(r² + h²)",
+        "lateral_surface_area": "A = πrl"
+      }
+    },
+    "trigonometry": {
+      "basic_ratios": {
+        "sine": "sin(θ) = opposite / hypotenuse",
+        "cosine": "cos(θ) = adjacent / hypotenuse",
+        "tangent": "tan(θ) = opposite / adjacent = sin(θ) / cos(θ)"
+      },
+      "reciprocal_ratios": {
+        "cosecant": "csc(θ) = 1 / sin(θ)",
+        "secant": "sec(θ) = 1 / cos(θ)",
+        "cotangent": "cot(θ) = 1 / tan(θ)"
+      },
+      "identities": {
+        "pythagorean": "sin²(θ) + cos²(θ) = 1",
+        "tan_identity": "tan²(θ) + 1 = sec²(θ)",
+        "double_angle": {
+          "sine": "sin(2θ) = 2sin(θ)cos(θ)",
+          "cosine": "cos(2θ) = cos²(θ) - sin²(θ)"
+        },
+        "addition": {
+          "sine": "sin(A+B) = sin(A)cos(B) + cos(A)sin(B)",
+          "cosine": "cos(A+B) = cos(A)cos(B) - sin(A)sin(B)"
+        }
+      },
+      "law_of_sines": "a/sin(A) = b/sin(B) = c/sin(C)",
+      "law_of_cosines": "c² = a² + b² - 2ab·cos(C)"
+    },
+    "calculus": {
+      "limits": {
+        "definition": "lim(x→a) f(x) = L",
+        "properties": {
+          "sum": "lim(x→a) [f(x) + g(x)] = lim(x→a) f(x) + lim(x→a) g(x)",
+          "product": "lim(x→a) [f(x) · g(x)] = lim(x→a) f(x) · lim(x→a) g(x)"
+        }
+      },
+      "derivatives": {
+        "definition": "f'(x) = lim(h→0) [f(x+h) - f(x)] / h",
+        "power_rule": "d/dx [xⁿ] = n·xⁿ⁻¹",
+        "product_rule": "d/dx [f(x)·g(x)] = f'(x)·g(x) + f(x)·g'(x)",
+        "quotient_rule": "d/dx [f(x)/g(x)] = [f'(x)·g(x) - f(x)·g'(x)] / [g(x)]²",
+        "chain_rule": "d/dx [f(g(x))] = f'(g(x)) · g'(x)"
+      },
+      "integrals": {
+        "indefinite": "∫ f(x) dx = F(x) + C",
+        "definite": "∫(a→b) f(x) dx = F(b) - F(a)",
+        "fundamental_theorem": "∫(a→b) f'(x) dx = f(b) - f(a)",
+        "power_rule": "∫ xⁿ dx = xⁿ⁺¹/(n+1) + C (n ≠ -1)"
+      }
+    },
+    "statistics": {
+      "central_tendency": {
+        "mean": "μ = (x₁ + x₂ + ... + xₙ) / n",
+        "median": "middle value when sorted",
+        "mode": "most frequent value"
+      },
+      "dispersion": {
+        "range": "max(x) - min(x)",
+        "variance": "σ² = Σ(x - μ)² / n",
+        "standard_deviation": "σ = √(σ²)"
+      },
+      "probability": {
+        "basic": "P(A) = (number of favorable outcomes) / (total number of outcomes)",
+        "conditional": "P(A|B) = P(A ∩ B) / P(B)",
+        "bayes_theorem": "P(A|B) = P(B|A) · P(A) / P(B)"
+      },
+      "distributions": {
+        "normal": "f(x) = (1 / (σ√2π)) · e^(-(x-μ)² / 2σ²)",
+        "binomial": "P(X = k) = (n choose k) · pᵏ · (1-p)ⁿ⁻ᵏ"
+      }
+    },
+    "constants": {
+      "pi": "π = 3.14159265359",
+      "e": "e = 2.71828182846",
+      "golden_ratio": "φ = 1.61803398875",
+      "avogadro": "N_A = 6.022 × 10²³ mol⁻¹",
+      "speed_of_light": "c = 299,792,458 m/s"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathly - Math AI Assistant</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Animated background shapes for chat interface -->
+    <div class="chat-bg-shape chat-bg-shape-1"></div>
+    <div class="chat-bg-shape chat-bg-shape-2"></div>
+    <div class="chat-bg-shape chat-bg-shape-3"></div>
+    
+    <!-- Floating math symbols -->
+    <div class="math-symbol" style="left: 5%; top: 10%; animation-duration: 50s;">∫</div>
+    <div class="math-symbol" style="left: 25%; top: 20%; animation-duration: 45s; animation-delay: 4s;">π</div>
+    <div class="math-symbol" style="left: 80%; top: 15%; animation-duration: 55s; animation-delay: 7s;">∑</div>
+    <div class="math-symbol" style="left: 70%; top: 8%; animation-duration: 48s; animation-delay: 10s;">√</div>
+    <div class="math-symbol" style="left: 15%; top: 25%; animation-duration: 52s; animation-delay: 5s;">θ</div>
+    <div class="math-symbol" style="left: 90%; top: 30%; animation-duration: 60s; animation-delay: 2s;">∞</div>
+    
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">M</div>
+                <h1>Mathly</h1>
+            </div>
+            <nav>
+                <a href="index.html" class="back-btn">Back to Home</a>
+            </nav>
+        </header>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        <p>Hi, I'm Mathly! I can help you solve math problems from basic arithmetic to advanced calculus. You can also take a picture of your math problem using the camera button. What can I help you with today?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <button id="camera-btn" class="camera-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                        <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                </button>
+                <input type="text" id="user-input" placeholder="Type your math question...">
+                <button id="send-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Camera Modal -->
+        <div class="camera-modal" id="camera-modal">
+            <div class="camera-modal-content">
+                <span class="camera-close">&times;</span>
+                <h2>Take a Picture of Your Math Problem</h2>
+                <div class="camera-container">
+                    <video id="camera-feed" autoplay></video>
+                    <canvas id="camera-canvas" style="display: none;"></canvas>
+                </div>
+                <div class="camera-controls">
+                    <button id="capture-btn">Capture</button>
+                    <button id="retake-btn" style="display: none;">Retake</button>
+                    <button id="send-image-btn" style="display: none;">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/chat.js"></script>
+<script src="scripts/gh-pages.js"></script>
+</body>
+</html>

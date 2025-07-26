@@ -1,0 +1,500 @@
+{
+  "formulas": {
+    "algebra": {
+      "quadratic_formula": "x = (-b ± √(b² - 4ac)) / 2a",
+      "slope_formula": "m = (y₂ - y₁) / (x₂ - x₁)",
+      "distance_formula": "d = √[(x₂ - x₁)² + (y₂ - y₁)²]",
+      "linear_equation": "y = mx + b",
+      "binomial_expansion": "(x + y)ⁿ = Σ (n choose k) xⁿ⁻ᵏyᵏ",
+      "polynomial_equation": "aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ... + a₁x + a₀ = 0",
+      "arithmetic_sequence": {
+        "nth_term": "aₙ = a₁ + (n-1)d",
+        "sum": "Sₙ = n/2 · (a₁ + aₙ)"
+      },
+      "geometric_sequence": {
+        "nth_term": "aₙ = a₁ · rⁿ⁻¹",
+        "sum": "Sₙ = a₁ · (1-rⁿ)/(1-r) (r ≠ 1)",
+        "infinite_sum": "S = a₁/(1-r) (|r| < 1)"
+      },
+      "exponent_rules": {
+        "product": "xᵃ · xᵇ = xᵃ⁺ᵇ",
+        "quotient": "xᵃ / xᵇ = xᵃ⁻ᵇ",
+        "power": "(xᵃ)ᵇ = xᵃᵇ",
+        "negative": "x⁻ᵃ = 1/xᵃ",
+        "zero": "x⁰ = 1 (x ≠ 0)"
+      },
+      "logarithm_rules": {
+        "product": "log(xy) = log(x) + log(y)",
+        "quotient": "log(x/y) = log(x) - log(y)",
+        "power": "log(xⁿ) = n·log(x)",
+        "change_base": "log_b(x) = log_a(x) / log_a(b)"
+      },
+      "factoring": {
+        "difference_of_squares": "a² - b² = (a+b)(a-b)",
+        "perfect_square_trinomial": "a² + 2ab + b² = (a+b)²",
+        "sum_of_cubes": "a³ + b³ = (a+b)(a² - ab + b²)",
+        "difference_of_cubes": "a³ - b³ = (a-b)(a² + ab + b²)"
+      },
+      "matrices": {
+        "addition": "[A] + [B] = [A+B]",
+        "scalar_multiplication": "k[A] = [kA]",
+        "matrix_multiplication": "[A][B] = [C] where c_ij = Σ a_ik · b_kj",
+        "determinant_2x2": "det([A]) = |A| = a₁₁a₂₂ - a₁₂a₂₁",
+        "inverse_2x2": "[A]⁻¹ = 1/|A| · [a₂₂ -a₁₂; -a₂₁ a₁₁]"
+      }
+    },
+    "geometry": {
+      "circle": {
+        "area": "A = πr²",
+        "circumference": "C = 2πr",
+        "diameter": "d = 2r",
+        "arc_length": "s = rθ (θ in radians)",
+        "sector_area": "A = (1/2)r²θ (θ in radians)"
+      },
+      "triangle": {
+        "area": "A = (1/2) · b · h",
+        "perimeter": "P = a + b + c",
+        "pythagorean_theorem": "a² + b² = c²",
+        "heron_formula": "A = √[s(s-a)(s-b)(s-c)] where s = (a+b+c)/2",
+        "angle_sum": "A + B + C = 180°",
+        "law_of_sines": "a/sin(A) = b/sin(B) = c/sin(C)",
+        "law_of_cosines": "c² = a² + b² - 2ab·cos(C)"
+      },
+      "rectangle": {
+        "area": "A = l · w",
+        "perimeter": "P = 2(l + w)",
+        "diagonal": "d = √(l² + w²)"
+      },
+      "square": {
+        "area": "A = s²",
+        "perimeter": "P = 4s",
+        "diagonal": "d = s√2"
+      },
+      "parallelogram": {
+        "area": "A = b · h",
+        "perimeter": "P = 2(a + b)",
+        "area_with_sides_and_angle": "A = ab·sin(θ)"
+      },
+      "trapezoid": {
+        "area": "A = (1/2) · (a + c) · h",
+        "perimeter": "P = a + b + c + d"
+      },
+      "regular_polygon": {
+        "area": "A = (1/2) · n · r · s",
+        "perimeter": "P = n · s",
+        "interior_angle": "θ = (n-2) · 180° / n",
+        "exterior_angle": "φ = 360° / n"
+      },
+      "sphere": {
+        "volume": "V = (4/3)πr³",
+        "surface_area": "A = 4πr²"
+      },
+      "cylinder": {
+        "volume": "V = πr²h",
+        "lateral_surface_area": "A = 2πrh",
+        "total_surface_area": "A = 2πr(r+h)"
+      },
+      "cone": {
+        "volume": "V = (1/3)πr²h",
+        "slant_height": "l = √(r² + h²)",
+        "lateral_surface_area": "A = πrl",
+        "total_surface_area": "A = πr(r+l)"
+      },
+      "pyramid": {
+        "volume": "V = (1/3) · B · h",
+        "surface_area": "A = B + (1/2) · p · l"
+      },
+      "prism": {
+        "volume": "V = B · h",
+        "surface_area": "A = 2B + Ph"
+      }
+    },
+    "trigonometry": {
+      "basic_ratios": {
+        "sine": "sin(θ) = opposite / hypotenuse",
+        "cosine": "cos(θ) = adjacent / hypotenuse",
+        "tangent": "tan(θ) = opposite / adjacent = sin(θ) / cos(θ)"
+      },
+      "reciprocal_ratios": {
+        "cosecant": "csc(θ) = 1 / sin(θ)",
+        "secant": "sec(θ) = 1 / cos(θ)",
+        "cotangent": "cot(θ) = 1 / tan(θ)"
+      },
+      "identities": {
+        "pythagorean": "sin²(θ) + cos²(θ) = 1",
+        "tan_identity": "tan²(θ) + 1 = sec²(θ)",
+        "cot_identity": "cot²(θ) + 1 = csc²(θ)",
+        "double_angle": {
+          "sine": "sin(2θ) = 2sin(θ)cos(θ)",
+          "cosine": "cos(2θ) = cos²(θ) - sin²(θ) = 2cos²(θ) - 1 = 1 - 2sin²(θ)",
+          "tangent": "tan(2θ) = 2tan(θ)/(1 - tan²(θ))"
+        },
+        "half_angle": {
+          "sine": "sin(θ/2) = ±√[(1 - cos(θ))/2]",
+          "cosine": "cos(θ/2) = ±√[(1 + cos(θ))/2]",
+          "tangent": "tan(θ/2) = (1 - cos(θ))/sin(θ) = sin(θ)/(1 + cos(θ))"
+        },
+        "addition": {
+          "sine": "sin(A+B) = sin(A)cos(B) + cos(A)sin(B)",
+          "cosine": "cos(A+B) = cos(A)cos(B) - sin(A)sin(B)",
+          "tangent": "tan(A+B) = [tan(A) + tan(B)]/[1 - tan(A)tan(B)]"
+        },
+        "subtraction": {
+          "sine": "sin(A-B) = sin(A)cos(B) - cos(A)sin(B)",
+          "cosine": "cos(A-B) = cos(A)cos(B) + sin(A)sin(B)",
+          "tangent": "tan(A-B) = [tan(A) - tan(B)]/[1 + tan(A)tan(B)]"
+        },
+        "product_to_sum": {
+          "sine_cosine": "sin(A)cos(B) = (1/2)[sin(A+B) + sin(A-B)]",
+          "sine_sine": "sin(A)sin(B) = (1/2)[cos(A-B) - cos(A+B)]",
+          "cosine_cosine": "cos(A)cos(B) = (1/2)[cos(A+B) + cos(A-B)]"
+        }
+      },
+      "law_of_sines": "a/sin(A) = b/sin(B) = c/sin(C) = 2R",
+      "law_of_cosines": "c² = a² + b² - 2ab·cos(C)"
+    },
+    "calculus": {
+      "limits": {
+        "definition": "lim(x→a) f(x) = L",
+        "properties": {
+          "sum": "lim(x→a) [f(x) + g(x)] = lim(x→a) f(x) + lim(x→a) g(x)",
+          "product": "lim(x→a) [f(x) · g(x)] = lim(x→a) f(x) · lim(x→a) g(x)",
+          "quotient": "lim(x→a) [f(x)/g(x)] = lim(x→a) f(x) / lim(x→a) g(x)",
+          "squeeze_theorem": "If g(x) ≤ f(x) ≤ h(x) and lim(x→a) g(x) = lim(x→a) h(x) = L, then lim(x→a) f(x) = L"
+        },
+        "special_limits": {
+          "sin_x_over_x": "lim(x→0) sin(x)/x = 1",
+          "one_minus_cos_x_over_x": "lim(x→0) [1-cos(x)]/x = 0",
+          "exponential": "lim(x→∞) (1 + 1/x)^x = e"
+        }
+      },
+      "derivatives": {
+        "definition": "f'(x) = lim(h→0) [f(x+h) - f(x)] / h",
+        "basic_rules": {
+          "constant": "d/dx [c] = 0",
+          "power_rule": "d/dx [x^n] = n·x^(n-1)",
+          "exponential": "d/dx [e^x] = e^x",
+          "natural_log": "d/dx [ln(x)] = 1/x",
+          "trig_functions": {
+            "sine": "d/dx [sin(x)] = cos(x)",
+            "cosine": "d/dx [cos(x)] = -sin(x)",
+            "tangent": "d/dx [tan(x)] = sec²(x)"
+          }
+        },
+        "combination_rules": {
+          "sum_rule": "d/dx [f(x) + g(x)] = f'(x) + g'(x)",
+          "product_rule": "d/dx [f(x)·g(x)] = f'(x)·g(x) + f(x)·g'(x)",
+          "quotient_rule": "d/dx [f(x)/g(x)] = [f'(x)·g(x) - f(x)·g'(x)] / [g(x)]²",
+          "chain_rule": "d/dx [f(g(x))] = f'(g(x)) · g'(x)"
+        },
+        "higher_derivatives": "f^(n)(x) = d^n/dx^n [f(x)]"
+      },
+      "integrals": {
+        "indefinite": "∫ f(x) dx = F(x) + C",
+        "definite": "∫(a→b) f(x) dx = F(b) - F(a)",
+        "fundamental_theorem": "∫(a→b) f'(x) dx = f(b) - f(a)",
+        "basic_rules": {
+          "power_rule": "∫ x^n dx = x^(n+1)/(n+1) + C (n ≠ -1)",
+          "natural_log": "∫ 1/x dx = ln|x| + C",
+          "exponential": "∫ e^x dx = e^x + C",
+          "trig_functions": {
+            "sine": "∫ sin(x) dx = -cos(x) + C",
+            "cosine": "∫ cos(x) dx = sin(x) + C",
+            "tangent": "∫ tan(x) dx = -ln|cos(x)| + C = ln|sec(x)| + C"
+          }
+        },
+        "techniques": {
+          "substitution": "∫ f(g(x))·g'(x) dx = ∫ f(u) du (where u = g(x))",
+          "parts": "∫ u·v' dx = u·v - ∫ v·u' dx"
+        },
+        "improper_integrals": {
+          "infinite_limit": "∫(a→∞) f(x) dx = lim(b→∞) ∫(a→b) f(x) dx",
+          "discontinuous_integrand": "∫(a→b) f(x) dx = lim(ε→0⁺) [∫(a→c-ε) f(x) dx + ∫(c+ε→b) f(x) dx]"
+        }
+      },
+      "differential_equations": {
+        "first_order": {
+          "separable": "g(y) dy = f(x) dx",
+          "linear": "y' + P(x)y = Q(x)"
+        },
+        "second_order": {
+          "homogeneous": "y'' + p·y' + q·y = 0",
+          "non-homogeneous": "y'' + p·y' + q·y = g(x)"
+        }
+      },
+      "series": {
+        "taylor_series": "f(x) = f(a) + f'(a)(x-a) + f''(a)(x-a)²/2! + ... + f^(n)(a)(x-a)^n/n! + ...",
+        "maclaurin_series": "f(x) = f(0) + f'(0)x + f''(0)x²/2! + ... + f^(n)(0)x^n/n! + ...",
+        "common_series": {
+          "e^x": "e^x = 1 + x + x²/2! + x³/3! + ... + x^n/n! + ...",
+          "sin_x": "sin(x) = x - x³/3! + x^5/5! - ... + (-1)^n·x^(2n+1)/(2n+1)! + ...",
+          "cos_x": "cos(x) = 1 - x²/2! + x^4/4! - ... + (-1)^n·x^(2n)/(2n)! + ..."
+        }
+      },
+      "vector_calculus": {
+        "gradient": "∇f = (∂f/∂x, ∂f/∂y, ∂f/∂z)",
+        "divergence": "∇·F = ∂F₁/∂x + ∂F₂/∂y + ∂F₃/∂z",
+        "curl": "∇×F = (∂F₃/∂y - ∂F₂/∂z, ∂F₁/∂z - ∂F₃/∂x, ∂F₂/∂x - ∂F₁/∂y)",
+        "laplacian": "∇²f = ∂²f/∂x² + ∂²f/∂y² + ∂²f/∂z²"
+      }
+    },
+    "statistics": {
+      "central_tendency": {
+        "mean": "μ = (x₁ + x₂ + ... + xₙ) / n",
+        "weighted_mean": "μ = (w₁x₁ + w₂x₂ + ... + wₙxₙ) / (w₁ + w₂ + ... + wₙ)",
+        "median": "middle value when sorted",
+        "mode": "most frequent value"
+      },
+      "dispersion": {
+        "range": "max(x) - min(x)",
+        "variance": "σ² = Σ(x - μ)² / n",
+        "sample_variance": "s² = Σ(x - x̄)² / (n-1)",
+        "standard_deviation": "σ = √(σ²)",
+        "sample_standard_deviation": "s = √(s²)",
+        "interquartile_range": "IQR = Q₃ - Q₁"
+      },
+      "probability": {
+        "basic": "P(A) = (number of favorable outcomes) / (total number of outcomes)",
+        "complement": "P(A') = 1 - P(A)",
+        "addition_rule": "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
+        "conditional": "P(A|B) = P(A ∩ B) / P(B)",
+        "multiplication_rule": "P(A ∩ B) = P(A) · P(B|A)",
+        "independence": "P(A ∩ B) = P(A) · P(B)",
+        "bayes_theorem": "P(A|B) = P(B|A) · P(A) / P(B)"
+      },
+      "distributions": {
+        "binomial": {
+          "pmf": "P(X = k) = (n choose k) · p^k · (1-p)^(n-k)",
+          "mean": "μ = np",
+          "variance": "σ² = np(1-p)"
+        },
+        "normal": {
+          "pdf": "f(x) = (1 / (σ√2π)) · e^(-(x-μ)² / 2σ²)",
+          "standard_normal": "Z = (X - μ) / σ",
+          "properties": "P(μ-σ < X < μ+σ) ≈ 0.6827, P(μ-2σ < X < μ+2σ) ≈ 0.9545, P(μ-3σ < X < μ+3σ) ≈ 0.9973"
+        },
+        "poisson": {
+          "pmf": "P(X = k) = (λ^k · e^(-λ)) / k!",
+          "mean": "μ = λ",
+          "variance": "σ² = λ"
+        }
+      },
+      "hypothesis_testing": {
+        "z_test": "z = (x̄ - μ) / (σ/√n)",
+        "t_test": "t = (x̄ - μ) / (s/√n)",
+        "chi_square": "χ² = Σ [(O - E)² / E]"
+      }
+    },
+    "physics": {
+      "mechanics": {
+        "kinematics": {
+          "velocity": "v = dx/dt",
+          "acceleration": "a = dv/dt = d²x/dt²",
+          "position_with_constant_acceleration": "x = x₀ + v₀t + (1/2)at²",
+          "velocity_with_constant_acceleration": "v = v₀ + at",
+          "kinematic_equation": "v² = v₀² + 2a(x - x₀)"
+        },
+        "dynamics": {
+          "newton_second_law": "F = ma",
+          "weight": "W = mg",
+          "momentum": "p = mv",
+          "impulse": "J = F·Δt = Δp",
+          "work": "W = F·d·cos(θ)",
+          "kinetic_energy": "KE = (1/2)mv²",
+          "potential_energy": {
+            "gravitational": "PE = mgh",
+            "elastic": "PE = (1/2)kx²"
+          },
+          "conservation_energy": "KE₁ + PE₁ = KE₂ + PE₂",
+          "power": "P = dW/dt = F·v"
+        },
+        "rotation": {
+          "angular_velocity": "ω = dθ/dt",
+          "angular_acceleration": "α = dω/dt",
+          "torque": "τ = r·F·sin(θ)",
+          "moment_inertia": "I = Σmᵢrᵢ²",
+          "angular_momentum": "L = Iω",
+          "rotational_kinetic_energy": "KE = (1/2)Iω²"
+        },
+        "gravity": {
+          "gravitational_force": "F = G·(m₁m₂)/r²",
+          "gravitational_field": "g = G·M/r²",
+          "orbital_velocity": "v = √(G·M/r)",
+          "escape_velocity": "v_e = √(2G·M/r)",
+          "kepler_third_law": "T² ∝ r³"
+        },
+        "fluid_mechanics": {
+          "density": "ρ = m/V",
+          "pressure": "P = F/A",
+          "hydrostatic_pressure": "P = P₀ + ρgh",
+          "buoyancy": "F_b = ρ·V·g",
+          "continuity_equation": "A₁v₁ = A₂v₂",
+          "bernoulli_equation": "P + (1/2)ρv² + ρgh = constant"
+        }
+      },
+      "thermodynamics": {
+        "temperature": {
+          "kelvin_celsius": "T(K) = T(°C) + 273.15",
+          "fahrenheit_celsius": "T(°F) = T(°C) · 9/5 + 32"
+        },
+        "heat": {
+          "thermal_energy": "Q = mcΔT",
+          "latent_heat": "Q = mL"
+        },
+        "gas_laws": {
+          "ideal_gas_law": "PV = nRT",
+          "boyle_law": "P₁V₁ = P₂V₂ (T constant)",
+          "charles_law": "V₁/T₁ = V₂/T₂ (P constant)",
+          "gay_lussac_law": "P₁/T₁ = P₂/T₂ (V constant)"
+        },
+        "thermodynamic_laws": {
+          "first_law": "ΔU = Q - W",
+          "second_law": "ΔS ≥ 0",
+          "entropy_change": "ΔS = Q/T"
+        },
+        "efficiency": {
+          "heat_engine": "η = W/Q_h = 1 - Q_c/Q_h",
+          "carnot_efficiency": "η = 1 - T_c/T_h"
+        }
+      },
+      "electromagnetism": {
+        "electrostatics": {
+          "coulomb_law": "F = k·(q₁q₂)/r²",
+          "electric_field": "E = F/q = k·Q/r²",
+          "electric_potential": "V = k·Q/r",
+          "electric_potential_energy": "U = q·V",
+          "capacitance": "C = Q/V",
+          "parallel_plate_capacitor": "C = εA/d"
+        },
+        "current_electricity": {
+          "current": "I = dQ/dt",
+          "ohm_law": "V = IR",
+          "resistance": "R = ρL/A",
+          "resistors": {
+            "series": "R_eq = R₁ + R₂ + ... + Rₙ",
+            "parallel": "1/R_eq = 1/R₁ + 1/R₂ + ... + 1/Rₙ"
+          },
+          "power": "P = IV = I²R = V²/R",
+          "capacitors": {
+            "series": "1/C_eq = 1/C₁ + 1/C₂ + ... + 1/Cₙ",
+            "parallel": "C_eq = C₁ + C₂ + ... + Cₙ"
+          },
+          "rc_circuit": {
+            "charging": "Q = Q₀(1 - e^(-t/RC))",
+            "discharging": "Q = Q₀e^(-t/RC)"
+          }
+        },
+        "magnetism": {
+          "magnetic_field_wire": "B = (μ₀I)/(2πr)",
+          "magnetic_field_solenoid": "B = μ₀nI",
+          "magnetic_force_charge": "F = q·v×B",
+          "magnetic_force_wire": "F = I·L×B"
+        },
+        "electromagnetic_induction": {
+          "faraday_law": "ε = -dΦ/dt",
+          "lenz_law": "The induced current creates a magnetic field that opposes the change in flux",
+          "inductance": "L = Φ/I",
+          "inductor_energy": "U = (1/2)LI²"
+        },
+        "electromagnetic_waves": {
+          "speed_light": "c = 3 × 10⁸ m/s",
+          "wave_equation": "c = f·λ",
+          "energy_photon": "E = hf = hc/λ"
+        }
+      },
+      "waves_and_optics": {
+        "wave_properties": {
+          "wave_speed": "v = f·λ",
+          "wave_equation": "y(x,t) = A·sin(kx - ωt + φ)",
+          "wavenumber": "k = 2π/λ",
+          "angular_frequency": "ω = 2πf"
+        },
+        "sound_waves": {
+          "speed_sound_air": "v ≈ 343 m/s (at 20°C)",
+          "intensity": "I = P/A",
+          "intensity_level": "β = 10·log(I/I₀) dB"
+        },
+        "doppler_effect": {
+          "approaching_source": "f' = f·(v/(v-v_s))",
+          "receding_source": "f' = f·(v/(v+v_s))"
+        },
+        "reflection_refraction": {
+          "law_reflection": "θ_r = θ_i",
+          "snell_law": "n₁·sin(θ₁) = n₂·sin(θ₂)",
+          "critical_angle": "θ_c = sin⁻¹(n₂/n₁)"
+        },
+        "lenses": {
+          "thin_lens_equation": "1/f = 1/d_o + 1/d_i",
+          "lens_power": "P = 1/f",
+          "magnification": "M = -d_i/d_o"
+        },
+        "mirrors": {
+          "mirror_equation": "1/f = 1/d_o + 1/d_i",
+          "magnification": "M = -d_i/d_o",
+          "focal_length_spherical": "f = R/2"
+        },
+        "interference": {
+          "double_slit": "d·sin(θ) = m·λ",
+          "thin_film": "2nt·cos(θ_r) = m·λ"
+        },
+        "diffraction": {
+          "single_slit": "a·sin(θ) = m·λ",
+          "circular_aperture": "sin(θ) = 1.22·λ/D"
+        }
+      },
+      "quantum_physics": {
+        "photon_energy": "E = hf = hc/λ",
+        "de_broglie_wavelength": "λ = h/(m·v) = h/p",
+        "heisenberg_uncertainty": "Δx·Δp ≥ ħ/2",
+        "schrödinger_equation": "H·Ψ = i·ħ·∂Ψ/∂t",
+        "hydrogen_energy_levels": "E_n = -13.6 eV / n²",
+        "bohr_radius": "a₀ = 0.529 × 10⁻¹⁰ m"
+      },
+      "relativity": {
+        "special_relativity": {
+          "time_dilation": "Δt = Δt₀/√(1-v²/c²)",
+          "length_contraction": "L = L₀·√(1-v²/c²)",
+          "mass_energy": "E = mc²",
+          "relativistic_momentum": "p = mv/√(1-v²/c²)",
+          "relativistic_energy": "E = mc²/√(1-v²/c²)"
+        },
+        "general_relativity": {
+          "gravitational_time_dilation": "Δt = Δt₀/√(1-2GM/(rc²))",
+          "schwarzschild_radius": "r_s = 2GM/c²"
+        }
+      },
+      "nuclear_physics": {
+        "binding_energy": "E_b = [Z·m_p + (A-Z)·m_n - m_nucleus]·c²",
+        "radioactive_decay": "N = N₀·e^(-λt)",
+        "half_life": "t_{1/2} = ln(2)/λ",
+        "activity": "A = λ·N",
+        "fusion_reaction": "D + T → He⁴ + n + 17.6 MeV",
+        "fission_reaction": "U²³⁵ + n → fission fragments + ~200 MeV"
+      }
+    },
+    "constants": {
+      "mathematical": {
+        "pi": "π = 3.14159265359",
+        "e": "e = 2.71828182846",
+        "golden_ratio": "φ = 1.61803398875"
+      },
+      "physical": {
+        "speed_of_light": "c = 2.99792458 × 10⁸ m/s",
+        "gravitational_constant": "G = 6.67430 × 10⁻¹¹ m³/(kg·s²)",
+        "planck_constant": "h = 6.62607015 × 10⁻³⁴ J·s",
+        "reduced_planck_constant": "ħ = h/(2π) = 1.054571817 × 10⁻³⁴ J·s",
+        "elementary_charge": "e = 1.602176634 × 10⁻¹⁹ C",
+        "electron_mass": "m_e = 9.1093837015 × 10⁻³¹ kg",
+        "proton_mass": "m_p = 1.67262192369 × 10⁻²⁷ kg",
+        "neutron_mass": "m_n = 1.67492749804 × 10⁻²⁷ kg",
+        "avogadro_constant": "N_A = 6.02214076 × 10²³ mol⁻¹",
+        "boltzmann_constant": "k_B = 1.380649 × 10⁻²³ J/K",
+        "gas_constant": "R = 8.31446261815324 J/(mol·K)",
+        "stefan_boltzmann_constant": "σ = 5.670374419 × 10⁻⁸ W/(m²·K⁴)",
+        "vacuum_permittivity": "ε₀ = 8.8541878128 × 10⁻¹² F/m",
+        "vacuum_permeability": "μ₀ = 1.25663706212 × 10⁻⁶ H/m",
+        "fine_structure_constant": "α = 7.2973525693 × 10⁻³ ≈ 1/137"
+      }
+    }
+  }
+}

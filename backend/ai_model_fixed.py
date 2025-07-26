@@ -4,12 +4,12 @@ import random
 import re
 import os
 import math
-import requests
+import requests # type: ignore
 from pathlib import Path
 
 # Try to import dotenv, but don't fail if not available
 try:
-    from dotenv import load_dotenv
+    from dotenv import load_dotenv # type: ignore
     load_dotenv()
 except ImportError:
     print("dotenv not installed, skipping environment loading")

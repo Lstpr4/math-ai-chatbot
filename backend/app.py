@@ -295,4 +295,24 @@ def process_image():
         return jsonify({'error': f"Error processing image: {str(e)}"}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Mathly Backend Server')
+    parser.add_argument('--port', type=int, default=5000, help='Port to run the server on')
+    parser.add_argument('--debug', action='store_true', help='Run in debug mode')
+    parser.add_argument('--formula-file', type=str, help='Override formula file path')
+    
+    args = parser.parse_args()
+    
+    # Check for environment variable to override formula file
+    if 'MATHLY_FORMULA_FILE' in os.environ and not args.formula_file:
+        formula_file = os.environ['MATHLY_FORMULA_FILE']
+        # Reinitialize AI model with the specified formula file
+        print(f"Using formula file from environment: {formula_file}")
+        math_ai = MathAIModel(formula_file)
+    elif args.formula_file:
+        print(f"Using formula file from argument: {args.formula_file}")
+        math_ai = MathAIModel(args.formula_file)
+    
+    print(f"Mathly server running on port {args.port}")
+    app.run(debug=args.debug, host='0.0.0.0', port=args.port)
